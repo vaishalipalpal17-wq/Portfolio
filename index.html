@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76e27a78f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="photos/logo.png" alt="Logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <h1>Hello,I'm <span>Vaishali</span></h1>
+            <h3>Web Developer</h3>
+            <p>I love building beautiful and responsive websites that make ideas come to life.</p>
+        </div>  
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="Photos/Professional photo.jpeg ">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Vaishali, a passionate web developer with a love for creating beautiful and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy bringing ideas to life through clean and efficient code. I am constantly learning and exploring new technologies to enhance my skills and deliver exceptional user experiences.I am dedicated my time to learning MERN stack development these days.</p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    <p class = "tab-links" onclick="opentab('interest')">My Interest</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Design</span><br>Creating modern UI/UX layouts</li>
+                        <li><span>Web Development</span><br>Building responsive websites</li>
+                        <li><span>My Interest</span><br>Exploring new technologies</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>B.tech CSE</span><br>MIET Meerut (2025-Present)</li>
+                        <li><span>Intermediate(91.1%)</span><br> Jawahar Navodaya Vidyalaya (2024-2025)</li>
+                        <li><span>Academic Achievements</span><br>1year CGPA: 9.19</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="interest">
+                    <ul>
+                        <li><span>Web Development</span><br>Creating responsive and modern websites</li>
+                        <li><span>Problem Solving</span><br>Improving logical and coding skills</li>
+                        <li><span>Technology</span><br>Exploring new tools and technologies</li>
+                        <li><span>Personal Growth</span><br>Improving communication and learning new skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- ------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            
+            <div class="service-card">
+                <i class="fa-solid fa-code" style="font-size: 50px"></i>
+                <h3>Web Design</h3>
+                <p>Creating modern and visually appealing UI/UX layouts for websites.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-laptop-code" style="font-size: 50px"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and functional websites using HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-code" style="font-size: 50px"></i>
+                <h3>Problem Solving</h3>
+                <p>Improving logical and coding skills through problem-solving exercises.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio--------- -->
+ <div id="portfolio">
+    <div class=" container">
+        <h1 class="sub-title" style="color: #fff;">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Photos/Wanderlust.jpg">
+                <div class="layer">
+                    <h3>Wanderlust</h3>
+                    <p>Wanderlust is a travel website that provides information about various travel destinations, including popular tourist attractions, local culture, and travel tips. It also features a booking system for flights, hotels, and tours.</p>
+                    <a href="https://wanderlust-2-dvue.onrender.com/">View Project</a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Photos/Amazonclone.jpeg">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>A clone of the Amazon website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Photos/work-3.png">
+                <div class="layer">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+ </div>
+
+ <!-- -----------contact ---------- -->
+<div id="contact">
+    <div class="container">
+       <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title" style="color: #fff;">Contact Me</h1>
+             <p style="color: #fff;"><i class="fas fa-paper-plane" style="color: #fff;"></i> vaishalipal.pal17@gmail.com</p>
+             <p style="color: #fff;"><i class="fas fa-phone-square-alt" style="color: #fff;"></i> 8979061737</p>
+             <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vaishali-7b7800381"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/vaishalipalpal17-wq"><i class="fab fa-github"></i></a>    
+             </div>
+             <a href="photos/My CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+   <div class="copyright">
+    <p>Copyright © 2026 Vaishali Pal. All Rights Reserved.</p>
+   </div> 
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxV6Tk1pZmHpoE6Y1I1k-cgRr_4Mbis9ifQNQe41zYtXpW82OS7ZtvBNaqLDZtljpejEw/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+			
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+</body>
+</html>
